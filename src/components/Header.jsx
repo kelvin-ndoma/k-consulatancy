@@ -1,97 +1,75 @@
-import{ useState } from "react";
-import { Link } from "react-router-dom";
-import { FaTimes, FaBars } from "react-icons/fa";
+import { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const Header = () => {
-  const [navbar, setNavbar] = useState(false);
-
-  const Navbar = [
-    {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "About",
-      link: "/about",
-    },
-    {
-      name: "Services",
-      link: "/services",
-    },
-    {
-      name: "Portfolio",
-      link: "/portfolio",
-    },
-    {
-      name: "Contact",
-      link: "/contact",
-    },
-  ];
-
-  const handleItemClick = () => {
-    // Close the menu when a menu item is clicked
-    setNavbar(false);
-  };
+  const [nav, setNav] = useState(false);
+  const handleClick = () => setNav(!nav);
 
   return (
-    <>
-      <nav className="w-full h-auto bg-gray-800 lg:px-24 md:px-16 sm:px-14 px-12 py-2 shadow-md">
-        <div className="justify-between mx-auto lg:w-full md:items-center md:flex">
-          {/* Navbar logo & toggle button section */}
-          <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              {/* Logo section */}
-              <Link className="text-3xl text-orange-500 font-semibold tracking-[0.1rem]">
-                Navbar
-              </Link>
-              {/* Toggle button section  (we will do it later) */}
-              <div className="md:hidden">
-                <button
-                  className="p-2 text-gray-700 rounded-md outline-none border border-transparent focus:border-gray-400 focus:border"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {navbar ? (
-                    <FaTimes
-                      className="text-gray-400 cursor-pointer"
-                      size={24}
-                    />
-                  ) : (
-                    <FaBars
-                      className="text-gray-400 cursor-pointer"
-                      size={24}
-                    />
-                  )}
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Navbar menu items section */}
-          <div
-            className={`flex justify-between items-center md:block ${
-              navbar ? "block" : "hidden"
-            }`}
-          >
-            <ul className="list-none lg:flex md:flex sm:block block gap-x-5 gap-y-16">
-              {Navbar.map((item, index) => (
-                <li key={index}>
-                  <Link
-                    to={item.link}
-                    className="text-gray-400 text-[1.15rem] font-medium tracking-wider hover:text-gray-200 ease-out duration-700"
-                    onClick={handleItemClick}
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-              <button className="bg-orange-500 text-[1.1rem] font-normal text-white px-5 py-1.5 rounded lg:ml-10 md:ml-6 sm:ml-0 ml-0">
-                Register
-              </button>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </>
+    // navbar styled
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+      <Link className="text-3xl text-orange-500 font-semibold tracking-[0.1rem]">
+        Navbar
+      </Link>
+      {/* menu for larger screens */}
+      <ul className='hidden md:flex lg:flex space-x-6 lg:space-x-12 gap-12 '>
+        <li className="hover:scale-110 duration-500 hover:bg-gray-600">
+          <Link to="home" smooth={true} offset={50} duration={500}>
+            Home
+          </Link>
+        </li>
+       
+        <li className="hover:scale-110 duration-500 hover:bg-gray-600">
+          <Link to="skills" smooth={true} offset={50} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li className="hover:scale-110 duration-500 hover:bg-gray-600">
+          <Link to="work" smooth={true} offset={50} duration={500}>
+            Work
+          </Link>
+        </li>
+        <li className="hover:scale-110 duration-500 hover:bg-gray-600">
+          <Link to="contact" smooth={true} offset={50} duration={500}>
+            Contact
+          </Link>
+        </li>
+        <li className="hover:scale-110 duration-500 hover:bg-gray-600">
+          <Link to="blogs" smooth={true} offset={50} duration={500}>
+            Blogs
+          </Link>
+        </li>
+      </ul>
+      {/* humberger */}
+      <div onClick={handleClick} className='md:hidden z-10'>
+        {!nav ? <FaBars /> : <FaTimes />}
+      </div>
+      {/* mobile menu */}
+      <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
+        <li className='py-6 text-4xl' >
+          <Link onClick={handleClick} to="home" smooth={true} offset={50} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to="skills" smooth={true} offset={50} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to="work" smooth={true} offset={50} duration={500}>
+            Work
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to="contact" smooth={true} offset={50} duration={500}>
+            Contact
+          </Link>
+        </li>
+      </ul>
+      {/* social media icons */}
+    </div>
   );
 };
 
