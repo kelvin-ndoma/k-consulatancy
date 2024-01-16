@@ -8,8 +8,8 @@ const Header = () => {
 
   return (
     // navbar styled
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-      <Link className="text-3xl text-orange-500 font-semibold tracking-[0.1rem]">
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#008080] text-gray-300'>
+      <Link to="home" className="text-3xl text-orange-500 font-semibold tracking-[0.1rem]">
         Navbar
       </Link>
       {/* menu for larger screens */}

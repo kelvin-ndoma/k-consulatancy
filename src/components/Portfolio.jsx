@@ -18,31 +18,43 @@ import Boot from "../assets/bootstrap.png"
 import Css from "../assets/css.png";
 import html from "../assets/html.png";
 import Webs from "../assets/Web & App Audit.png";
-
+import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
     return (
-        <div name="skills" className='w-full  text-black'>
+        <div name="skills" className='w-full  text-black bg-[#C0C0C0]'>
             {/* container */}
             <div className='max-w-[1000px] mx-auto p-4 flex-col justify-center w-full h-full'>
                 <div>
                     <p className='text-4xl font-bold inline border-b-4 border-pink-600 '>Set of Skills</p>
-                    <p className='py-4'>Hi this Are the technoligies & tools I have experience with</p>
+                    <p className='py-4'>Hi, these are the technologies & tools I have experience with</p>
+                    <Link to="digital">
+                        <button className='bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 mr-2 md:mr-10 mb-2 md:mb-0 md:ml-2 rounded-md transition duration-300 ease-in-out'>
+                            Digital Marketing Skills
+                        </button>
+                    </Link>
+
+                    <Link to="software">
+                        <button className='bg-green-500 hover:bg-green-700 text-white py-2 px-4 md:ml-2 rounded-md transition duration-300 ease-in-out'>
+                            Software Engineering Skills
+                        </button>
+                    </Link>
                 </div>
+
                 <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-10 text-center py-8' >
                     <div className='shadow-md shadow-[#160e04] hover:scale-110 duration-500'>
-                        <img className='w-50 mx-auto' src={SEO} alt='HTML icon' />
+                        <img className=' w-50 mx-auto' src={SEO} alt='HTML icon' />
                         <p className='py-4'>SEO & SEM</p>
                     </div>
                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                         <img className='w-50 mx-auto' src={AD} alt='ADS icon' />
                         <p className='py-4'>Ads(FB,IG, Google)</p>
                     </div>
-                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                         <img className='w-50 mx-auto' src={AB} alt='A/B icon' />
                         <p className='py-4'>A/B Testing</p>
                     </div>
-                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                         <img className='w-50 mx-auto' src={Web} alt='HTML icon' />
                         <p className='py-4'>SEO& Web +App Auditting</p>
                     </div>

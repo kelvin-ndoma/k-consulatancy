@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from 'react-icons/bs';
+import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import Me from '../assets/me1.jpg';
 
-export const Home = () => {
+const Home = () => {
   const [showMore, setShowMore] = useState(false);
 
   const handleShowMore = () => {
@@ -10,7 +10,8 @@ export const Home = () => {
   };
 
   return (
-    <section className="flex flex-col lg:flex-row sm:flex-col items-center p-10 space-x-10 lg:space-x-20 lg:space-y-0 ssm:space-y-10 text-black">
+
+    <div name="home" className="flex flex-col lg:flex-row sm:flex-col items-center p-10 space-x-10 lg:space-x-20 lg:space-y-0 ssm:space-y-10 bg-[#C0C0C0] text-black">
       <div className="lg:w-1/3 ssm:w-full mb-10 lg:mb-0">
         <p className="text-4xl mb-5 text-black font-bold">Hello</p>
         <h1 className="text-6xl">I am Kelvin Ndoma</h1>
@@ -23,9 +24,9 @@ export const Home = () => {
         <img
           src={Me}
           alt="kelvin"
-          className={`w-full border-8 border-white lg:mt-10 lg:mb-0 overflow-hidden`}
+          className={`w-full border-8 border-white lg:mt-20 lg:mb-0 overflow-hidden`}
           style={{
-            borderRadius: '90% 50% 60% 40% / 20% 50% 20% 50%', // Adjust the values as needed
+            borderRadius: '10px 100px / 120px', // Adjust the values as needed
           }}
         />
 
@@ -38,7 +39,7 @@ export const Home = () => {
         <p>
           {showMore
             ? "Let's collaborate to solve those tech problems from the start to the end"
-            : "Let's collaborate to solve those tech problems from the start to the end..."}
+            : "Let's collaborate to solve those tech problems from the start to the endy..."}
         </p>
         <button
           className="bg-black text-orange-600 px-8 py-2 my-3 rounded-full hover:bg-indigo-800 hover:text-white"
@@ -46,13 +47,16 @@ export const Home = () => {
         >
           {showMore ? 'Show less' : 'Show more...'}
         </button>
-        <div className="flex mt-5 space-x-4 cursor-pointer">
-          <BsFacebook size={30} className="border-4 hover:border-orange-800 rounded-full" />
-          <BsTwitter size={30} className="border-4 hover:border-blue-800 rounded-full" />
-          <BsInstagram size={30} className="border-4 hover:border-indigo-800 rounded-full" />
-          <BsLinkedin size={30} className="border-4 hover:border-indigo-800 rounded-full" />
+        <div className="flex mt-10 space-x-4 cursor-pointer">
+          <BsFacebook size={40} className="hover:bg-blue-500 hover:text-white p-2 rounded-full transition duration-300 ease-in-out" />
+          <BsInstagram size={40} className="hover:bg-pink-500 hover:text-white p-2 rounded-full transition duration-300 ease-in-out" />
+          <BsLinkedin size={40} className="hover:bg-indigo-500 hover:text-white p-2 rounded-full transition duration-300 ease-in-out" />
         </div>
+
+
+
       </div>
-    </section>
+    </div>
   );
 };
+export default Home;
