@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-scroll';
+import Logo from "../assets/Logo.png"
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -9,8 +10,9 @@ const Header = () => {
   return (
     // navbar styled
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#008080] text-gray-300'>
-      <Link to="home" className="text-3xl text-orange-500 font-semibold tracking-[0.1rem]">
-        Navbar
+       <Link to="home" className="flex items-center">
+        <img src={Logo} alt="Logo" className="h-12 w-auto mr-2" />
+        <span className="text-xl font-semibold text-orange-500 tracking-[0.1rem]">Marc & Tech</span>
       </Link>
       {/* menu for larger screens */}
       <ul className='hidden md:flex lg:flex space-x-6 lg:space-x-12 gap-12 '>

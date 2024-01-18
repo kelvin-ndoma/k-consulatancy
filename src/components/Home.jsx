@@ -26,35 +26,38 @@ const Home = () => {
           alt="kelvin"
           className={`w-full border-8 border-white lg:mt-20 lg:mb-0 overflow-hidden`}
           style={{
-            borderRadius: '10px 100px / 120px', // Adjust the values as needed
+            borderRadius: '190px 190px 0 0 / 190px',
           }}
+
         />
-
-
-
 
       </div>
       <div className="lg:w-1/3 ssm:w-full">
-        <p className='font-semibold text-3xl'> About Me</p>
-        <p>
+        <p className='text-4xl font-bold inline border-b-4 text-blabk border-pink-600'> About Me</p>
+        <p className='py-6'>
           {showMore
-            ? "Let's collaborate to solve those tech problems from the start to the end"
-            : "Let's collaborate to solve those tech problems from the start to the endy..."}
+            ? "Welcome to Mark & Tech, where innovation meets expertise! I'm Kelvin Ndoma, your Digital Marketing Specialist, Full stack Web developer, and a Mathematician. My mission is to be your strategic partner in navigating marketing and tech challenges. Join me on a transformative journey where innovation, precision, and strategic thinking turn challenges into opportunities for success."
+            : "Welcome to Mark & Tech, where innovation meets expertise!"}
         </p>
         <button
-          className="bg-black text-orange-600 px-8 py-2 my-3 rounded-full hover:bg-indigo-800 hover:text-white"
+          className={`bg-orange-500 text-black px-8 py-2 my-3 rounded-full transition duration-300 ease-in-out 
+              hover:bg-indigo-800 hover:text-white focus:outline-none focus:ring focus:border-indigo-300`}
           onClick={handleShowMore}
         >
           {showMore ? 'Show less' : 'Show more...'}
         </button>
+
         <div className="flex mt-10 space-x-4 cursor-pointer">
-          <BsFacebook size={40} className="hover:bg-blue-500 hover:text-white p-2 rounded-full transition duration-300 ease-in-out" />
-          <BsInstagram size={40} className="hover:bg-pink-500 hover:text-white p-2 rounded-full transition duration-300 ease-in-out" />
-          <BsLinkedin size={40} className="hover:bg-indigo-500 hover:text-white p-2 rounded-full transition duration-300 ease-in-out" />
+          <a href="https://www.facebook.com/kelvin.aparajit.1/" target="_blank" rel="noopener noreferrer">
+            <BsFacebook size={40} className="hover:bg-blue-500 hover:text-white p-2 rounded-full transition duration-300 ease-in-out" />
+          </a>
+          <a href="https://www.instagram.com/k.e.l_v.i.n.s/" target="_blank" rel="noopener noreferrer">
+            <BsInstagram size={40} className="hover:bg-pink-500 hover:text-white p-2 rounded-full transition duration-300 ease-in-out" />
+          </a>
+          <a href="https://www.linkedin.com/in/kelvin-ndoma-637102259/" target="_blank" rel="noopener noreferrer">
+            <BsLinkedin size={40} className="hover:bg-indigo-500 hover:text-white p-2 rounded-full transition duration-300 ease-in-out" />
+          </a>
         </div>
-
-
-
       </div>
     </div>
   );

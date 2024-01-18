@@ -1,8 +1,12 @@
 
 
- const Software = () => {
+const Services = () => {
   return (
-    <div id="software">Software</div>
-  )
-}
-export default Software
+    <div>
+      <h2>Our Services</h2>
+      {/* Add content specific to your services */}
+    </div>
+  );
+};
+
+export default Services;

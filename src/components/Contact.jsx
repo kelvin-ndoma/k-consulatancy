@@ -18,7 +18,7 @@ const Contact = () => {
       </form>
       {/* Business details and quote section */}
       <div className="md:w-[300px] text-left md:text-left text-gray-300 bg-gray-800 p-6 rounded-md shadow-md">
-        <p className="text-xl font-bold mb-4 text-white">Your Business Name</p>
+        <p className="text-xl font-bold mb-4 text-white">K-MacTech</p>
         <p className="text-gray-400 mb-2">Nairobi, Kenya</p>
         <p className="text-gray-400 mb-2">Phone: +254 708840557</p>
         <p className="text-gray-400 mb-2">Email: kelvinmutuandoma@gmail.com</p>
