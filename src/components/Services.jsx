@@ -1,12 +1,12 @@
 import { data } from "../data/data";
-import { BsCodeSlash, BsPlay } from 'react-icons/bs'; // Assuming you have these icons imported
+import { BsCodeSlash, BsPlay } from 'react-icons/bs';
 
 const Services = () => {
   const projects = data;
 
   return (
-    <div name="work" className="w-full md:h-screen bg-[#C0C0C0] text-black">
-      <div className="max-w-[100%] mx-auto p-4 flex flex-col justify-center w-full h-full">
+    <div name="work" className="w-full min-h-screen bg-[#C0C0C0] text-black pt-32">
+      <div className="max-w-[100%] mx-auto p-4 flex flex-col justify-center w-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 text-black border-pink-600">
             Work
