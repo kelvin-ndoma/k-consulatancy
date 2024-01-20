@@ -22,9 +22,9 @@ import Webs from "../assets/Web & App Audit.png";
 
 const Portfolio = () => {
     return (
-        <div name="skills" className='w-full text-black bg-[#C0C0C0]'>
-            {/* container */}
-            <div className='max-w-[100%] mx-auto p-4 flex-col justify-center w-full h-full'>
+        <div name="skills" className='w-full text-black bg-[#C0C0C0] pt-10'>
+        {/* container */}
+        <div className='max-w-[100%] mx-auto p-4 flex-col justify-center w-full h-full pt-20'>
                 <div>
                     <p className='text-4xl font-bold inline border-b-4 border-pink-600 '>Set of Skills</p>
                     <p className='py-4'>Hi, these are the technologies & tools I have experience with</p>
