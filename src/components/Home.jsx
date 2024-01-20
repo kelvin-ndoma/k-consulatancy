@@ -16,10 +16,20 @@ const Home = () => {
         <p className="text-4xl mb-5 text-black font-bold">Hello</p>
         <h1 className="text-6xl">I am Kelvin Ndoma</h1>
         <hr className="border-t-2 my-5 w-1/4 border-indigo-600" />
-        <p>
+        <p className="mb-4">
           A Digital Marketing Specialist | A software developer As well As a Mathematician. Here to solve your Marketing and Tech problems
         </p>
+
+        {/* Add the button for downloading the CV */}
+        <button className="bg-orange-500 hover:bg-blue-700 text-white font-bold py-2 mt-6  px-6 rounded-full">
+          <a href="/path/to/your/cv.pdf" download="Kelvin_Ndoma_CV.pdf">
+            Download CV
+          </a>
+        </button>
       </div>
+
+
+
       <div className="lg:w-1/3 ssm:w-full mb-10">
         <img
           src={Me}
@@ -28,12 +38,10 @@ const Home = () => {
           style={{
             borderRadius: '190px 190px 0 0 / 190px',
           }}
-
         />
-
       </div>
-      <div className="lg:w-1/3 ssm:w-full">
-        <p className='text-4xl font-bold inline border-b-4 text-blabk border-pink-600'> About Me</p>
+      <div className="lg:w-1/3 ssm:w-full lg:pt-16">
+        <p className='text-4xl ssm:w-full font-bold inline border-b-4 text-blabk border-pink-600 ml-0'> About Me</p>
         <p className='py-6'>
           {showMore
             ? "Welcome to Mark & Tech, where innovation meets expertise! I'm Kelvin Ndoma, your Digital Marketing Specialist, Full stack Web developer, and a Mathematician. My mission is to be your strategic partner in navigating marketing and tech challenges. Join me on a transformative journey where innovation, precision, and strategic thinking turn challenges into opportunities for success."
@@ -41,7 +49,7 @@ const Home = () => {
         </p>
         <button
           className={`bg-orange-500 text-black px-8 py-2 my-3 rounded-full transition duration-300 ease-in-out 
-              hover:bg-indigo-800 hover:text-white focus:outline-none focus:ring focus:border-indigo-300`}
+        hover:bg-indigo-800 hover:text-white focus:outline-none focus:ring focus:border-indigo-300`}
           onClick={handleShowMore}
         >
           {showMore ? 'Show less' : 'Show more...'}
@@ -59,6 +67,7 @@ const Home = () => {
           </a>
         </div>
       </div>
+
     </div>
   );
 };
