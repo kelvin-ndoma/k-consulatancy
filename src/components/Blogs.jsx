@@ -1,13 +1,13 @@
 // Blogs Component
 const Blogs = () => {
   return (
-    <div name="blogs" className="w-full text-black bg-[#C0C0C0]">
-      <div className="container mx-auto p-4">
+    <div name="blogs" className="w-full text-black bg-[#C0C0C0] pt-20">
+      <div className="container mx-auto p-2 pt-20">
         <h1 className="text-4xl font-bold inline border-b-4 text-blabk border-pink-600">Blogs & Skills</h1>
 
         <div className="flex flex-col md:flex-row md:space-x-4">
           {/* Digital Marketing Skills Column */}
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 pt-16">
             <h2 className="text-2xl font-bold py-6 mb-4">Digital Marketing Skills</h2>
             <ul className="list-disc pl-4 space-y-2">
               <li className="mb-2">Search Engine Optimization (SEO)</li>
@@ -25,7 +25,7 @@ const Blogs = () => {
           </div>
 
           {/* Software Engineering Skills Column */}
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 pt-16">
             <h2 className="text-2xl font-bold py-6 mb-4">Software Engineering Skills</h2>
             <ul className="list-disc pl-4 space-y-2">
               <li className="mb-2">Programming Languages</li>
@@ -42,7 +42,7 @@ const Blogs = () => {
           </div>
 
           {/* List of Blogs (Displayed as a third column on large screens) */}
-          <div className="md:w-1/3 mt-4 md:mt-0">
+          <div className="md:w-1/3 mt-4 md:mt-0 pt-16">
             <h2 className="text-2xl font-bold py-6 mb-4">List of Blogs</h2>
             <ul className="list-disc pl-4 space-y-2">
               <li className="mb-2">From Mathematics- Digital Marketing</li>
