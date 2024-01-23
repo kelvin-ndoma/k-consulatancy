@@ -26,7 +26,7 @@ return (
 
   <div name="home" className="flex flex-col lg:flex-row sm:flex-col items-center p-10 space-x-10 lg:space-x-20 lg:space-y-0 ssm:space-y-10 bg-[#C0C0C0] text-black">
     <div className="lg:w-1/3 ssm:w-full mb-10 lg:mb-0">
-      <p className="text-2xl md:text-4xl lg:4xl mb-5 text-black font-bold font-sans ">Hello & Welcome,</p>
+      <p className="text-2xl md:text-4xl lg:4xl mb-5 text-black font-bold font-sans ">Welcome,</p>
 
       <h1 style={{ paddingTop: '2rem', margin: 'auto 0', fontWeight: 'normal', fontSize: '30px' }}>
         I am Kelvin, a {' '}
