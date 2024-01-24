@@ -1,7 +1,17 @@
-// Blogs Component
+
+import { Helmet } from 'react-helmet';
+
 const Blogs = () => {
   return (
-    <div name="blogs" className="w-full h-full text-[#bfa181] bg-[#0a1828] pt-20">
+    <div>
+      <Helmet>
+        <title>Kelvin Ndoma - Blogs & Skills</title>
+        <meta
+          name="description"
+          content="Explore Kelvin Ndoma's blogs and skills in digital marketing and software engineering. Learn about his expertise in SEO, social media marketing, web development, and more."
+        />
+      </Helmet>
+    <div name="blogs" className="w-full h-full text-[#bfa181] bg-[#0a1828] pt-16">
       <div className="container mx-auto p-2 pt-32">
         <h1 className="text-4xl font-bold inline border-b-4 text-blabk border-pink-600">Blogs & Skills</h1>
 
@@ -57,6 +67,7 @@ const Blogs = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

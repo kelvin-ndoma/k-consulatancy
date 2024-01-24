@@ -1,7 +1,9 @@
+
+import { Helmet } from 'react-helmet';
 import { Typewriter } from 'react-simple-typewriter';
 import { Link } from 'react-router-dom';
-import About from '../components/About'
-import Logo from "../assets/logos.svg"
+import About from '../components/About';
+import Logo from "../assets/logos.svg";
 import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs';
 
 const Home = () => {
@@ -15,10 +17,15 @@ const Home = () => {
 
   return (
     <div>
-      <div className="fixed top-0 w-full z-10 bg-white">
-        {/* Your navbar content */}
-        {/* Add your navigation links, logo, or any other content here */}
-      </div>
+      <Helmet>
+        <title>Digital Marketer & Web developer</title>
+        <meta
+          name="description"
+          content="A Digital Marketing Specialist, Software Developer, and Mathematician. Solving your Marketing and Tech problems. Explore my skills in digital marketing, web development, and more."
+        />
+      </Helmet>
+
+      <div className="fixed top-0 w-full z-10 bg-white"></div>
 
       <div name="home" className="flex flex-col lg:flex-row items-center p-10 lg:p-20 space-y-10 lg:space-x-20 bg-[#0a1828] text-black">
         <div className="lg:w-1/2 ssm:w-full mb-10">
@@ -47,16 +54,16 @@ const Home = () => {
             and Tech problems
           </p>
           <div className="flex mt-10 space-x-4 cursor-pointer">
-          <a href="https://www.facebook.com/kelvin.aparajit.1/" target="_blank" rel="noopener noreferrer">
-            <BsFacebook size={40} className="bg-[#1877f2] hover:text-white p-2 rounded-full transition duration-300 ease-in-out" />
-          </a>
-          <a href="https://www.instagram.com/k.e.l_v.i.n.s/" target="_blank" rel="noopener noreferrer">
-            <BsInstagram size={40} className="bg-[#c32aa3] hover:text-white p-2 rounded-full transition duration-300 ease-in-out" />
-          </a>
-          <a href="https://www.linkedin.com/in/kelvin-ndoma-637102259/" target="_blank" rel="noopener noreferrer">
-            <BsLinkedin size={40} className="bg-[#0a66c2] hover:text-white p-2 rounded-full transition duration-300 ease-in-out" />
-          </a>
-        </div>
+            <a href="https://www.facebook.com/kelvin.aparajit.1/" target="_blank" rel="noopener noreferrer">
+              <BsFacebook size={40} className="bg-[#1877f2] hover:text-white p-2 rounded-full transition duration-300 ease-in-out" />
+            </a>
+            <a href="https://www.instagram.com/k.e.l_v.i.n.s/" target="_blank" rel="noopener noreferrer">
+              <BsInstagram size={40} className="bg-[#c32aa3] hover:text-white p-2 rounded-full transition duration-300 ease-in-out" />
+            </a>
+            <a href="https://www.linkedin.com/in/kelvin-ndoma-637102259/" target="_blank" rel="noopener noreferrer">
+              <BsLinkedin size={40} className="bg-[#0a66c2] hover:text-white p-2 rounded-full transition duration-300 ease-in-out" />
+            </a>
+          </div>
           {/* Button to navigate to Skills page */}
           <Link to="/skills">
             <button className="bg-[#00ffff] text-white px-4 py-2 rounded-lg hover:bg-indigo-800 transition duration-300 mt-3 md:mt-5">

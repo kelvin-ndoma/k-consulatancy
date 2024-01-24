@@ -1,5 +1,17 @@
+
+import { Helmet } from 'react-helmet';
+
 const Contact = () => {
   return (
+    <div>
+      <Helmet>
+        <title>Kelvin Ndoma - Get In Touch</title>
+        <meta
+          name="description"
+          content="Contact Kelvin Ndoma for inquiries or business. Fill out the form or reach out through provided business details. Your success is our priority - let's create something amazing together."
+        />
+      </Helmet>
+
     <div name='contact' className='w-full bg-[#0a1828] flex flex-col md:flex-row justify-center items-center pt-14 sm:pt-20 md:pt-24 lg:pt-12'>
       <form method='POST' action="https://getform.io/f/fadc208b-aa8f-409e-a534-df50ac8b18ba" className='flex flex-col max-w-[600px] mx-4 sm:mx-8 pt-16  md:pt-24 w-full md:mr-8'>
         <div className='pb-8'>
@@ -26,6 +38,7 @@ const Contact = () => {
         
       </div>
 
+    </div>
     </div>
   )
 }
