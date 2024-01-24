@@ -5,10 +5,10 @@ const Services = () => {
   const projects = data;
 
   return (
-    <div name="work" className="w-full min-h-screen bg-[#C0C0C0] text-black pt-32">
+    <div name="work" className="w-full min-h-screen bg-[#0a1828] text-[#bfa181] pt-32">
       <div className="max-w-[100%] mx-auto p-4 flex flex-col justify-center w-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 text-black border-pink-600">
+          <p className="text-4xl font-bold inline border-b-4 text-[#bfa181] border-pink-600">
             Work
           </p>
           <p className="py-6">Check out some of my recent work</p>
@@ -46,6 +46,17 @@ const Services = () => {
             </div>
           ))}
         </div>
+
+        {/* Container for digital marketing jobs */}
+        {/* <div className="py-8">
+          <p className="text-4xl font-bold inline border-b-4 text-black border-pink-600">
+            Digital Marketing Jobs
+          </p>
+          <p className="py-6">Check out some of the latest digital marketing jobs</p>
+        </div> */}
+
+        {/* Add your digital marketing job components here */}
+        {/* For example, you can use a similar grid layout as above */}
       </div>
     </div>
   );

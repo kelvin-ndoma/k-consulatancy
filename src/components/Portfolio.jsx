@@ -22,7 +22,7 @@ import Webs from "../assets/Web & App Audit.png";
 
 const Portfolio = () => {
     return (
-        <div name="skills" className='w-full text-black bg-[#C0C0C0] pt-10'>
+        <div name="skills" className='w-full text-[#bfa181] bg-[#0a1828] pt-10'>
         {/* container */}
         <div className='max-w-[100%] mx-auto p-4 flex-col justify-center w-full h-full pt-20'>
                 <div>
@@ -30,9 +30,9 @@ const Portfolio = () => {
                     <p className='py-4'>Hi, these are the technologies & tools I have experience with</p>
                 </div>
 
-                <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-10 text-center py-8'>
+                <div className='w-full grid grid-cols-2 sm:grid-cols-5 gap-10 text-center py-8'>
                     <div className='shadow-md shadow-[#160e04] '>
-                        <img className=' w-50 mx-auto' src={SEO} alt='HTML icon' />
+                        <img className=' w-50 mx-auto' src={SEO} alt='seo icon' />
                         <p className='py-4'>SEO & SEM</p>
                     </div>
                     <div className='shadow-md shadow-[#040c16] '>
