@@ -1,6 +1,6 @@
 
 import { Helmet } from 'react-helmet';
-import Logo from "../assets/logoo.svg";
+import Logo from "../assets/bg.jpg";
 import CV from "../assets/Kelvin.pdf";
 import { Link } from 'react-router-dom';
 
@@ -18,13 +18,13 @@ const About = () => {
       <div className="p-10 lg:p-20 bg-[#0a1828] text-[#bfa181]">
         <h1 className="text-6xl lg:text-5xl mb-5 text-[#bfa181] font-serif font-semibold">About Me</h1>
         <div className="flex flex-col lg:flex-row items-center space-y-10 lg:space-x-20">
-          <div className="lg:w-1/2 ssm:w-full mb-12 bg-transparent">
+          <div className="lg:w-1/2 ssm:w-full mb-12 bg-purple">
             <img
               src={Logo}
               alt="kelvin"
               className="w-full h-auto max-h-96 object-cover border-8 rounded-lg shadow-lg mt-6 md:mt-16"
               style={{
-                borderRadius: '0 190px 0 0', // Updated border-radius shorthand
+                borderRadius: '50% 0 50% 50%', // Updated border-radius shorthand
               }}
             />
           </div>

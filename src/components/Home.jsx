@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Typewriter } from 'react-simple-typewriter';
 import { Link } from 'react-router-dom';
 import About from '../components/About';
-import Logo from "../assets/logos.svg";
+import Logo from "../assets/Ai.jpg";
 import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs';
 
 const Home = () => {
@@ -76,9 +76,9 @@ const Home = () => {
           <img
             src={Logo}
             alt="kelvin"
-            className=" h-auto max-h-96 w-96 object-cover border-8 rounded-lg shadow-lg mt-6 md:mt-16 lg:rounded-none lg:border-none lg:shadow-none"
+            className=" h-auto max-h-96 w-100 object-cover border-8 rounded-lg shadow-lg mt-6 md:mt-16 lg:rounded-none lg:border-none lg:shadow-none"
             style={{
-              borderRadius: '0px 0px 0 0 / 220px',
+              borderRadius: '0 50% 50% 50%',
             }}
           />
         </div>
