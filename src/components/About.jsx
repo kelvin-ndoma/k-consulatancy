@@ -19,7 +19,7 @@ const About = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
-      <div className="p-10 lg:p-20 bg-[#0a1828] text-[#bfa181]">
+      <div  name='about'className="p-10 lg:p-20 bg-[#0a1828] text-[#bfa181]">
         <h1 className="text-6xl lg:text-5xl mb-5 text-[#bfa181] text-center font-serif font-semibold">Meet Kelvin</h1>
         <div className="flex flex-col lg:flex-row items-center space-y-10 lg:space-x-20">
           <div className="lg:w-1/2 ssm:w-full mb-12 bg-[#0a1828] flex justify-center">

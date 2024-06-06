@@ -6,6 +6,7 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Blogs from './components/Blogs';
 import Footer from './components/Footer'; // Import the Footer component
+import About from './components/About';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/work" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About/>} />
       </Routes>
       <Footer /> {/* Include the Footer component here */}
     </Router>

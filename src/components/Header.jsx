@@ -8,13 +8,16 @@ const Header = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a1828] text-[#00ced1]'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a1828] text-[#00ced1] z-50'>
       <Link to="/" className="flex items-center">
         <img src={Logo} alt="Logo" className="h-12 w-auto mr-2" />
         <span className="text-2xl font-semibold text-[#6acfc7] tracking-[0.1rem]">Mark <br></br> Tech</span>
       </Link>
       {/* menu for larger screens */}
       <ul className='hidden md:flex lg:flex space-x-6 lg:space-x-12 gap-12'>
+        <li className="hover:scale-110 duration-500 text-2xl hover:bg-gray-600">
+          <Link to="/about">About</Link>
+        </li>
         <li className="hover:scale-110 duration-500 text-2xl hover:bg-gray-600">
           <Link to="/skills">Services</Link>
         </li>
@@ -38,7 +41,10 @@ const Header = () => {
       {/* mobile menu */}
       <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a1828] flex flex-col justify-center items-center'}>
         <li className='py-6 text-4xl' >
-          <Link onClick={handleClick} to="/">Home</Link>
+          <Link onClick={handleClick} to="/">Welcome</Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to="/about">About</Link>
         </li>
         <li className='py-6 text-4xl'>
           <Link onClick={handleClick} to="/skills">Skills</Link>

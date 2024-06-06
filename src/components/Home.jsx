@@ -1,9 +1,9 @@
 import { Helmet } from "react-helmet";
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
-import About from "../components/About";
 import Logo from "../assets/Ai.jpg";
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
+import Software from "./Software"
 
 const Home = () => {
   const handleType = (count) => {
@@ -50,10 +50,9 @@ const Home = () => {
             >
               <Typewriter
                 words={[
-                  "Digital Marketer",
+                  "Data Driven Digital Marketer",
                   "Web developer",
                   "Creative",
-                  "Physicist",
                 ]}
                 loop={5}
                 cursor
@@ -67,7 +66,7 @@ const Home = () => {
             </span>
           </h1>
 
-          <hr className="border-t-2 my-5 w-1/4 border-indigo-600" />
+          <hr className="border-t-3 my-6 w-1/4 border-indigo-600" />
           <br></br>
           <p className="text-3xl lg:text-xl text-[white] font-sans">
             A Digital Marketing Specialist | A software developer As well As a
@@ -108,7 +107,7 @@ const Home = () => {
           </div>
           {/* Button to navigate to Skills page */}
           <Link to="/skills">
-            <button className="bg-[#b1995f] text-white px-4 py-2 rounded-lg hover:bg-indigo-800 transition duration-300 mt-3 md:mt-5">
+            <button className="bg-[Green] text-white px-4 py-2 rounded-lg hover:bg-indigo-800 transition duration-300 mt-3 md:mt-5">
               Explore My Skills
             </button>
           </Link>
@@ -125,8 +124,8 @@ const Home = () => {
           />
         </div>
       </div>
+     <Software/>
 
-      <About />
     </div>
   );
 };
