@@ -23,7 +23,6 @@ const Products = () => {
               I help businesses achieve their marketing and Technology goals by
               providing expert services and innovative solutions.
             </p>
-
             <div className="text-center md:text-left mt-2 md:flex md:justify-center">
               <span className="block animate-bounce text-4xl md:text-5xl md:hidden">
                 👇
