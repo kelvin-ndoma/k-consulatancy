@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
 import Logo from "../assets/Ai.jpg";
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
-import Software from "./Software";
+
 
 const Home = () => {
   const handleType = (count) => {

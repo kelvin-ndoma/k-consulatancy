@@ -8,7 +8,7 @@ import {
   faUsers,
   faDollarSign,
 } from "@fortawesome/free-solid-svg-icons";
-import cover from "/home/kelvin/folio/marc-tech/src/assets/cover.jpg"; // Make sure to import the image
+import cover from "../assets/cover.jpg";
 
 const Products = () => {
   return (
@@ -20,7 +20,7 @@ const Products = () => {
               Why Choose Marc & Tech?
             </h2>
             <p className="text-xl mt-4">
-              I help businesses achieve their marketing and Technology goals by
+              I help businesses achieve their marketing and technology goals by
               providing expert services and innovative solutions.
             </p>
             <div className="text-center md:text-left mt-2 md:flex md:justify-center">
@@ -53,8 +53,8 @@ const Products = () => {
               </div>
               <div className="mt-4">
                 <p className="text-lg italic">
-                  "If you are on first page of all major search engines then you
-                  are ahead among your competitors in terms of online sales"
+                  "If you are on the first page of all major search engines, then you
+                  are ahead among your competitors in terms of online sales."
                 </p>
               </div>
             </div>
@@ -85,7 +85,7 @@ const Products = () => {
               />
               <h3 className="text-lg font-bold">Improved Efficiency</h3>
               <p>
-                We streamline your marketing and Tech processes, saving you time
+                We streamline your marketing and tech processes, saving you time
                 and resources.
               </p>
             </div>
@@ -169,7 +169,6 @@ const Products = () => {
                   <p className="italic text-xl">
                     Content Marketing & SEO Optimization
                   </p>
-                  
                 </div>
               </div>
             </div>
@@ -225,7 +224,7 @@ const Products = () => {
               <div className="w-full md:w-1/2 flex justify-center relative z-10">
                 <div className="bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-500 text-white rounded-lg p-6 shadow-md max-w-xl text-center md:mr-10 mt-10 md:mt-0">
                   <p className="italic text-xl">
-                  Email Marketing & Marketing Automation
+                    Email Marketing & Marketing Automation
                   </p>
                 </div>
               </div>
